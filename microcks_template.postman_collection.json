@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "72fd3cad-c726-4069-99cc-b8bd1b790c4f",
 		"name": "Api Documentation",
-		"description": "Api Documentation",
+		"description": "version=1.0 - This is first API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
