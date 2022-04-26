@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "72fd3cad-c726-4069-99cc-b8bd1b790c4f",
+		"name": "Api Documentation",
+		"description": "Api Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test/app/two",
+			"item": [
+				{
+					"name": "testPostRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"age\": -82353955,\n  \"birthday\": \"1945-10-31T04:29:10.974Z\",\n  \"id\": \"7de5bfbe-f29c-05be-e824-849cc2734a57\",\n  \"name\": \"ut et ut\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/test/app/two/post/request"
+					},
+					"response": [
+						{
+							"name": "Successfully created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"age\": -82353955,\n  \"birthday\": \"1945-10-31T04:29:10.974Z\",\n  \"id\": \"7de5bfbe-f29c-05be-e824-849cc2734a57\",\n  \"name\": \"ut et ut\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/test/app/two/post/request"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseMessage\": \"success\", \n    \"errorMessage\": \"\"\n}"
+						},
+						{
+							"name": "Failed operation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"age\": -82353955,\n  \"birthday\": \"1945-10-31T04:29:10.974Z\",\n  \"id\": \"7de5bfbe-f29c-05be-e824-849cc2734a57\",\n  \"name\": \"ut et ut\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/test/app/two/post/request"
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"responseMessage\": \"\", \n    \"errorMessage\": \"exception\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "//localhost:8082",
+			"type": "string"
+		}
+	]
+}
